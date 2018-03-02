@@ -24,6 +24,11 @@ import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
 
+import { registerLocaleData } from '@angular/common';
+import ptBr from '@angular/common/locales/pt';
+
+registerLocaleData(ptBr)
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +52,7 @@ import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra
 	RouterModule.forRoot(ROUTES)
   ],
   providers: [ CarrinhoService,
-				{ provide: LOCALE_ID, useValue: 'pt-Br' } ],
+				{ provide: LOCALE_ID, useValue: 'pt' } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
