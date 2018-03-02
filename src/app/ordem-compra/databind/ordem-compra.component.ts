@@ -11,7 +11,7 @@ import { Pedido } from '../../shared/pedido.model';
 export class OrdemCompraComponent implements OnInit {
 
   //Pedido
-  public pedido: Pedido = new Pedido('','','','')
+  public pedido: Pedido = new Pedido('','','','',[])
   public idPedidoCompra: number
 
   public endereco: string = ''
